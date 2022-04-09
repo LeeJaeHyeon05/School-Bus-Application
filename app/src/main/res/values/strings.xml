@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">school bus app</string>
+    <string name="creditText">MADE BY JAE HAYEON</string>
+    <string name="studentText">학생</string>
+    <string name="teacherText">선생님</string>
+    <string name="chooseText">하나를 선택 해주세요.</string>
+</resources>
