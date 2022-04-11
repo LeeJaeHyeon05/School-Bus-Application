@@ -9,4 +9,6 @@
 
 
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="menuHomeText">홈</string>
+    <string name="menuChatText">채팅</string>
 </resources>

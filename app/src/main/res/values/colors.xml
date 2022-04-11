@@ -10,4 +10,5 @@
 
 
     <color name="backgroundColor">#FFD15A</color>
+    <color name="buttonColor">#685114</color>
 </resources>
