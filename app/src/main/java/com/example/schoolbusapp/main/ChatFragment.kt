@@ -10,6 +10,11 @@ import com.example.schoolbusapp.R
 
 class ChatFragment : Fragment() {
 
+    companion object {
+        fun newInstance() : ChatFragment {
+            return ChatFragment()
+        }
+    }
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,

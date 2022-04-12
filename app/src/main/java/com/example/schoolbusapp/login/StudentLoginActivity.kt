@@ -9,6 +9,7 @@ import com.example.schoolbusapp.databinding.ActivityIntroBinding
 import com.example.schoolbusapp.databinding.ActivityStudentLoginBinding
 import com.example.schoolbusapp.databinding.FragmentHomeBinding
 import com.example.schoolbusapp.main.HomeFragment
+import com.example.schoolbusapp.main.MainActivity
 import java.text.SimpleDateFormat
 
 class StudentLoginActivity : AppCompatActivity() {
@@ -16,7 +17,7 @@ class StudentLoginActivity : AppCompatActivity() {
     private var mBinding : ActivityStudentLoginBinding? = null
     private val binding get() = mBinding!!
 
-    private val IP = IdPassWord("p1", "123")
+    private val IP = IdPassWord("student", "kgs123")
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -50,8 +51,7 @@ class StudentLoginActivity : AppCompatActivity() {
             // 간단 로그인을 위한 메인
             //만약 아이디와 비번이 인풋과 같으면 intent를 활용해 test 페이지를 보여준다
             if (inputLogin == IP.id && inputPassword == IP.password) {
-                val intent = Intent(this, HomeFragment::class.java )
-                startActivity(intent)
+                startActivity(Intent(this, MainActivity::class.java ))
                 //만약 안 같고 비어있으면 이 구문을 실행
             } else {
                 if (inputLogin.isNullOrEmpty() && inputPassword.isNullOrEmpty()) {

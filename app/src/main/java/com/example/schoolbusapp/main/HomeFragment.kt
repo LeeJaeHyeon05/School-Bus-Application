@@ -9,6 +9,12 @@ import com.example.schoolbusapp.R
 
 class HomeFragment : Fragment() {
 
+    companion object {
+        fun newInstance() : HomeFragment {
+            return HomeFragment()
+        }
+    }
+
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?

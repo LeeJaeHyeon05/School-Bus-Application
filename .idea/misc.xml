@@ -15,6 +15,10 @@
         <entry key="app/src/main/res/layout/activity_intro.xml" value="0.19610507246376813" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.15601043701171877" />
         <entry key="app/src/main/res/layout/activity_splash2.xml" value="0.19610507246376813" />
+        <entry key="app/src/main/res/layout/activity_student_login.xml" value="0.11676798378926039" />
+        <entry key="app/src/main/res/layout/activity_teacher_login.xml" value="0.11676798378926039" />
+        <entry key="app/src/main/res/layout/fragment_chat.xml" value="0.11676798378926039" />
+        <entry key="app/src/main/res/layout/fragment_home.xml" value="0.11676798378926039" />
       </map>
     </option>
   </component>
