@@ -4,12 +4,8 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Toast
-import com.example.schoolbusapp.R
-import com.example.schoolbusapp.databinding.ActivityIntroBinding
 import com.example.schoolbusapp.databinding.ActivityStudentLoginBinding
-import com.example.schoolbusapp.databinding.FragmentHomeBinding
-import com.example.schoolbusapp.main.HomeFragment
-import com.example.schoolbusapp.main.MainActivity
+import com.example.schoolbusapp.main.StudentMainActivity
 import java.text.SimpleDateFormat
 
 class StudentLoginActivity : AppCompatActivity() {
@@ -34,6 +30,7 @@ class StudentLoginActivity : AppCompatActivity() {
         binding.studentLoginTimeTextView.text = timeFormat.format(currentTime)
 
 
+
         initLogin()
 
     }
@@ -51,7 +48,7 @@ class StudentLoginActivity : AppCompatActivity() {
             // 간단 로그인을 위한 메인
             //만약 아이디와 비번이 인풋과 같으면 intent를 활용해 test 페이지를 보여준다
             if (inputLogin == IP.id && inputPassword == IP.password) {
-                startActivity(Intent(this, MainActivity::class.java ))
+                startActivity(Intent(this, StudentMainActivity::class.java ))
                 //만약 안 같고 비어있으면 이 구문을 실행
             } else {
                 if (inputLogin.isNullOrEmpty() && inputPassword.isNullOrEmpty()) {

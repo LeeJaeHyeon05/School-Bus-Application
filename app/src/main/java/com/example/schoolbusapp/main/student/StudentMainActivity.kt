@@ -3,29 +3,29 @@ package com.example.schoolbusapp.main
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.example.schoolbusapp.R
-import com.example.schoolbusapp.databinding.ActivityMainBinding
+import com.example.schoolbusapp.databinding.ActivityStudentMainBinding
 import com.google.android.material.bottomnavigation.BottomNavigationView
-import java.lang.reflect.Array.newInstance
 
-class MainActivity : AppCompatActivity() {
+class StudentMainActivity : AppCompatActivity() {
 
-    private lateinit var homeFragment: HomeFragment
-    private lateinit var chatFragment: ChatFragment
+    private lateinit var homeFragment: StudentHomeFragment
+    private lateinit var chatFragment: StudentChatFragment
 
-    private var mBinding: ActivityMainBinding? = null
+    private var mBinding: ActivityStudentMainBinding? = null
     private val binding get() = mBinding!!
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        mBinding = ActivityMainBinding.inflate(layoutInflater)
+        mBinding = ActivityStudentMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
 
         val btnNav = binding.bottomNav
         btnNav.setOnNavigationItemSelectedListener (onBottomNavItemSelectedListener)
 
-        homeFragment = HomeFragment.newInstance()
+        homeFragment = StudentHomeFragment.newInstance()
         supportFragmentManager.beginTransaction().add(R.id.fragments_frame, homeFragment).commit()
+
 
 
     }
@@ -33,14 +33,19 @@ class MainActivity : AppCompatActivity() {
 
         when (it.itemId) {
             R.id.menu_home -> {
-                homeFragment = HomeFragment.newInstance()
+                homeFragment = StudentHomeFragment.newInstance()
                 supportFragmentManager.beginTransaction().replace(R.id.fragments_frame, homeFragment).commit()
             }
             R.id.menu_chat -> {
-                chatFragment = ChatFragment.newInstance()
+                chatFragment = StudentChatFragment.newInstance()
                 supportFragmentManager.beginTransaction().replace(R.id.fragments_frame, chatFragment).commit()
             }
         }
         true
+    }
+
+    override fun onDestroy() {
+        super.onDestroy()
+        mBinding = null
     }
 }

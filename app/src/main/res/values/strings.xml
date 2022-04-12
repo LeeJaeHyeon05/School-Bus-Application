@@ -11,4 +11,7 @@
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="menuHomeText">홈</string>
     <string name="menuChatText">채팅</string>
+    <string name="teacherLoginText">선생님</string>
+    <string name="teacherHintText">선생님 아이디</string>
+    <string name="teacherPasswordHintText">선생님 비밀번호</string>
 </resources>

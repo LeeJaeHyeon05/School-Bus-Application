@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.schoolbusapp" >
+    package="com.example.schoolbusapp">
 
     <application
         android:allowBackup="true"
@@ -8,7 +8,10 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.SchoolBusApp" >
+        android:theme="@style/Theme.SchoolBusApp">
+        <activity
+            android:name=".TeacherMainActivity"
+            android:exported="false" />
         <activity
             android:name=".login.TeacherLoginActivity"
             android:exported="false" />
@@ -20,7 +23,7 @@
             android:exported="false" />
         <activity
             android:name=".SplashActivity"
-            android:exported="true" >
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -28,7 +31,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".main.MainActivity"
+            android:name=".main.StudentMainActivity"
             android:exported="true" />
     </application>
 

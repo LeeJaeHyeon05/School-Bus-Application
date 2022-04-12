@@ -3,6 +3,7 @@ package com.example.schoolbusapp
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.Toast
 import com.example.schoolbusapp.databinding.ActivityIntroBinding
 import com.example.schoolbusapp.login.StudentLoginActivity
 import com.example.schoolbusapp.login.TeacherLoginActivity
@@ -24,7 +25,6 @@ class IntroActivity : AppCompatActivity() {
         binding.teacherImageView.setOnClickListener {
             startActivity(Intent(this, TeacherLoginActivity::class.java))
         }
-
 
     }
 

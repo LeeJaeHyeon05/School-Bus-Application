@@ -4,9 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".main.MainActivity"
+    tools:context=".TeacherMainActivity"
     android:background="@color/backgroundColor">
-
 
     <FrameLayout
         android:id="@+id/fragments_frame"
@@ -24,7 +23,5 @@
         android:layout_centerHorizontal="true"
         android:background="#FFFFFF"
         app:menu="@menu/bot_menu" />
-
-
 
 </RelativeLayout>
