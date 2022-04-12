@@ -32,6 +32,20 @@ class TeacherHomeFragment : Fragment() {
         return binding.root
     }
 
+    private fun busNumButton() {
+        val b1 = binding.bus1Button
+        val b2 = binding.bus2Button
+        val b3 = binding.bus3Button
+        val b4 = binding.bus4Button
+        val b5 = binding.bus5Button
+        val b6 = binding.bus6Button
+        val b7 = binding.bus7Button
+
+        b1.setOnClickListener {
+
+        }
+    }
+
     override fun onDestroyView() {
         super.onDestroyView()
         mBinding = null

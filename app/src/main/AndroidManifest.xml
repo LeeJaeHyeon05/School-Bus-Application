@@ -10,6 +10,27 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.SchoolBusApp">
         <activity
+            android:name=".B7Activity"
+            android:exported="false" />
+        <activity
+            android:name=".B6Activity"
+            android:exported="false" />
+        <activity
+            android:name=".B5Activity"
+            android:exported="false" />
+        <activity
+            android:name=".B4Activity"
+            android:exported="false" />
+        <activity
+            android:name=".B3Activity"
+            android:exported="false" />
+        <activity
+            android:name=".B2Activity"
+            android:exported="false" />
+        <activity
+            android:name=".B1Activity"
+            android:exported="false" />
+        <activity
             android:name=".TeacherMainActivity"
             android:exported="false" />
         <activity
