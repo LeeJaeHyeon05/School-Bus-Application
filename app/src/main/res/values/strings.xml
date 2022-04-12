@@ -4,4 +4,11 @@
     <string name="studentText">학생</string>
     <string name="teacherText">선생님</string>
     <string name="chooseText">하나를 선택 해주세요.</string>
+    <string name="studentIdHintText">학생 아이디</string>
+    <string name="studentPasswordHintText">학생 비밀번호</string>
+
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="menuHomeText">홈</string>
+    <string name="menuChatText">채팅</string>
 </resources>
