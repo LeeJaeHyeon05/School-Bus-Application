@@ -1,14 +1,112 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".main.teacher.BlankFragment">
+    xmlns:app="http://schemas.android.com/apk/res-auto">
 
-    <!-- TODO: Update blank fragment layout -->
+
+
     <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:id="@+id/TitleTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="15dp"
+        android:textSize="23sp"
+        android:textColor="@color/black"
+        android:text="각 버스 도우미 선생님은 맞는 버스 번호를 찾아 눌러주세요"
+        android:gravity="center_horizontal"
+        android:textStyle="bold"
+        />
 
-</FrameLayout>
+    <Button
+        android:id="@+id/bus1Button"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/TitleTextView"
+        android:layout_marginStart="55dp"
+        android:layout_marginTop="30dp"
+        android:text="1"
+        android:textSize="80sp"
+        />
+
+    <Button
+        android:id="@+id/bus2Button"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        app:layout_constraintStart_toEndOf="@+id/bus1Button"
+        app:layout_constraintBottom_toBottomOf="@+id/bus1Button"
+        app:layout_constraintTop_toTopOf="@+id/bus1Button"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:text="2"
+        android:textSize="80sp"
+        />
+
+    <Button
+        android:id="@+id/bus3Button"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bus1Button"
+        android:layout_marginStart="55dp"
+        android:layout_marginTop="8dp"
+        android:text="3"
+        android:textSize="80sp"
+        />
+
+    <Button
+        android:id="@+id/bus4Button"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        app:layout_constraintStart_toEndOf="@+id/bus3Button"
+        app:layout_constraintBottom_toBottomOf="@+id/bus3Button"
+        app:layout_constraintTop_toTopOf="@+id/bus3Button"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:text="4"
+        android:textSize="80sp"
+        />
+    <Button
+        android:id="@+id/bus5Button"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bus3Button"
+        android:layout_marginStart="55dp"
+        android:layout_marginTop="8dp"
+        android:text="5"
+        android:textSize="80sp"
+        />
+
+    <Button
+        android:id="@+id/bus6Button"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        app:layout_constraintStart_toEndOf="@+id/bus5Button"
+        app:layout_constraintBottom_toBottomOf="@+id/bus5Button"
+        app:layout_constraintTop_toTopOf="@+id/bus5Button"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:text="6"
+        android:textSize="80sp"
+        />
+
+    <Button
+        android:id="@+id/bus7Button"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        app:layout_constraintStart_toStartOf="@+id/bus5Button"
+        app:layout_constraintEnd_toEndOf="@+id/bus6Button"
+        app:layout_constraintTop_toBottomOf="@+id/bus5Button"
+        android:text="7"
+        android:textSize="80sp"
+        />
+
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

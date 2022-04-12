@@ -6,6 +6,8 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import com.example.schoolbusapp.R
+import com.example.schoolbusapp.databinding.ActivityTeacherMainBinding
+import com.example.schoolbusapp.databinding.FragmentTeacherHomeBinding
 import com.example.schoolbusapp.main.StudentChatFragment
 
 class TeacherHomeFragment : Fragment() {
@@ -15,14 +17,24 @@ class TeacherHomeFragment : Fragment() {
             return TeacherHomeFragment()
         }
     }
+    private var mBinding: FragmentTeacherHomeBinding? = null
+    private val binding get() = mBinding!!
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View? {
-        // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_teacher_home, container, false)
+    ): View {
+        mBinding = FragmentTeacherHomeBinding.inflate(inflater, container, false)
+
+
+
+
+        return binding.root
     }
 
+    override fun onDestroyView() {
+        super.onDestroyView()
+        mBinding = null
+    }
 
 }
