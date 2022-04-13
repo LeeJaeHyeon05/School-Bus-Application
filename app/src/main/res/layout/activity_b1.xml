@@ -4,6 +4,128 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".B1Activity">
+    tools:context=".B1Activity"
+    android:background="@color/backgroundColor">
+
+    <TextView
+        android:id="@+id/busRouteTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginStart="20sp"
+        android:layout_marginTop="20dp"
+        android:textSize="30sp"
+        android:textColor="@color/black"
+        android:text="@string/busRouteText"/>
+
+    <TextView
+        android:id="@+id/Cantavil"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/busRouteTextView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:text="(7:00) Cantavil 4HS"
+        android:textSize="28sp"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/black"/>
+
+    <Button
+        android:id="@+id/cantavilStartButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/Cantavil"
+        app:layout_constraintStart_toStartOf="@+id/Cantavil"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="20dp"
+        android:text="시작"
+        android:textSize="15sp"/>
+
+    <Button
+        android:id="@+id/cantavilStopButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/Cantavil"
+        app:layout_constraintStart_toEndOf="@+id/cantavilStartButton"
+        app:layout_constraintEnd_toEndOf="@+id/Cantavil"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="5dp"
+        android:text="도착"
+        android:textSize="15sp"
+        />
+
+    <TextView
+        android:id="@+id/Park"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/cantavilStartButton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:text="(7:15) Park 7 2HS"
+        android:textSize="28sp"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/black"/>
+
+    <Button
+        android:id="@+id/ParkStartButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/Park"
+        app:layout_constraintStart_toStartOf="@+id/Park"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="20dp"
+        android:text="시작"
+        android:textSize="15sp"/>
+
+    <Button
+        android:id="@+id/ParkStopButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/Park"
+        app:layout_constraintStart_toEndOf="@+id/ParkStartButton"
+        app:layout_constraintEnd_toEndOf="@+id/Park"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="5dp"
+        android:text="도착"
+        android:textSize="15sp"
+        />
+
+    <TextView
+        android:id="@+id/Landmark"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/ParkStartButton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:text="(7:17) Landmark 1 1HS"
+        android:textSize="28sp"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/black"/>
+
+    <Button
+        android:id="@+id/LandmarkStartButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/Landmark"
+        app:layout_constraintStart_toStartOf="@+id/Landmark"
+        app:layout_constraintEnd_toEndOf="@+id/Landmark"
+        android:layout_marginTop="10dp"
+        android:text="시작"
+        android:textSize="15sp"/>
+
+    <Button
+        android:id="@+id/LandmarkStopButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/Landmark"
+        app:layout_constraintStart_toEndOf="@+id/LandmarkStartButton"
+        app:layout_constraintEnd_toEndOf="@+id/Landmark"
+        android:layout_marginTop="10dp"
+        android:text="도착"
+        android:textSize="15sp"
+        />
+
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

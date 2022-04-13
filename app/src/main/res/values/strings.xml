@@ -14,4 +14,5 @@
     <string name="teacherLoginText">선생님</string>
     <string name="teacherHintText">선생님 아이디</string>
     <string name="teacherPasswordHintText">선생님 비밀번호</string>
+    <string name="busRouteText">버스 노선</string>
 </resources>
