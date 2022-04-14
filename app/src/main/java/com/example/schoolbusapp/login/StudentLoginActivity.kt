@@ -1,9 +1,12 @@
 package com.example.schoolbusapp.login
 
 import android.content.Intent
+import android.content.SharedPreferences
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.preference.PreferenceManager
 import android.widget.Toast
+import com.example.schoolbusapp.R
 import com.example.schoolbusapp.databinding.ActivityStudentLoginBinding
 import com.example.schoolbusapp.main.StudentMainActivity
 import java.text.SimpleDateFormat
@@ -15,6 +18,9 @@ class StudentLoginActivity : AppCompatActivity() {
 
     private val IP = IdPassWord("student", "kgs123")
 
+
+    private lateinit var sharedPreferences : SharedPreferences
+    private lateinit var editor : SharedPreferences.Editor
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -29,9 +35,17 @@ class StudentLoginActivity : AppCompatActivity() {
         val timeFormat = SimpleDateFormat("HH시 : mm분")
         binding.studentLoginTimeTextView.text = timeFormat.format(currentTime)
 
+        sharedPreferences = PreferenceManager.getDefaultSharedPreferences(this)
+        editor = sharedPreferences.edit()
+
+        val pref = this.getPreferences(0)
+        val editor = pref.edit()
+
+
 
 
         initLogin()
+
 
     }
 
@@ -63,6 +77,8 @@ class StudentLoginActivity : AppCompatActivity() {
             }
         }
     }
+
+
 
     override fun onDestroy() {
         super.onDestroy()
