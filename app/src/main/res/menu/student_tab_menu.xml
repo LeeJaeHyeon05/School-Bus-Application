@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/bus1"
+        android:title="@string/bus1Text"/>
+    <item
+        android:id="@+id/bus2"
+        android:title="@string/bus2Text"/>
+
+    <item
+        android:id="@+id/bus3"
+        android:title="@string/bus3Text"/>
+
+    <item
+        android:id="@+id/bus4"
+        android:title="@string/bus4Text"/>
+
+    <item
+        android:id="@+id/bus5"
+        android:title="@string/bus5Text"/>
+
+    <item
+        android:id="@+id/bus6"
+        android:title="@string/bus6Text"/>
+
+    <item
+        android:id="@+id/bus7"
+        android:title="@string/bus7Text"/>
+
+
+
+</menu>

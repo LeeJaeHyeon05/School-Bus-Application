@@ -12,6 +12,8 @@ class B1Activity : AppCompatActivity() {
         setContentView(R.layout.activity_b1)
         backBtn()
 
+
+
     }
 
     private fun backBtn() {

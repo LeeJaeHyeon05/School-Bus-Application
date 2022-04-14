@@ -13,7 +13,6 @@ class TeacherMainActivity : AppCompatActivity() {
 
 
     private lateinit var homeFragment: TeacherHomeFragment
-    private lateinit var chatFragment: TeacherChatFragment
 
     private var mBinding: ActivityTeacherMainBinding? = null
     private val binding get() = mBinding!!
@@ -38,10 +37,6 @@ class TeacherMainActivity : AppCompatActivity() {
             R.id.menu_home -> {
                 homeFragment = TeacherHomeFragment.newInstance()
                 supportFragmentManager.beginTransaction().replace(R.id.fragments_frame, homeFragment).commit()
-            }
-            R.id.menu_chat -> {
-                chatFragment = TeacherChatFragment.newInstance()
-                supportFragmentManager.beginTransaction().replace(R.id.fragments_frame, chatFragment).commit()
             }
         }
         true

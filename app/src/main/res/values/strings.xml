@@ -15,4 +15,11 @@
     <string name="teacherHintText">선생님 아이디</string>
     <string name="teacherPasswordHintText">선생님 비밀번호</string>
     <string name="busRouteText">버스 노선</string>
+    <string name="bus1Text">1호차</string>
+    <string name="bus2Text">2호차</string>
+    <string name="bus3Text">3호차</string>
+    <string name="bus4Text">4호차</string>
+    <string name="bus5Text">5호차</string>
+    <string name="bus6Text">6호차</string>
+    <string name="bus7Text">7호차</string>
 </resources>

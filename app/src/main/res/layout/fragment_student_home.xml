@@ -3,9 +3,40 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".main.StudentHomeFragment">
 
 
+    <TextView
+        android:id="@+id/currentTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="10dp"
+        android:text="현재 시간은 : 23시 40분 입니다"
+        android:textColor="@color/black"
+        android:textSize="25sp"/>
+    
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/studentTabLayout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="5dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/currentTime" />
+
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/studentViewPager2"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layoutDirection="ltr"
+        app:layout_constraintTop_toBottomOf="@id/studentTabLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
