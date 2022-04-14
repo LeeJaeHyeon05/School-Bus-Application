@@ -13,9 +13,306 @@
         android:layout_height="wrap_content"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        android:layout_marginStart="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
         android:layout_marginTop="20dp"
         android:textSize="30sp"
         android:textColor="@color/black"
         android:text="@string/busRouteText"/>
+    <Button
+        android:id="@+id/backPressedButton"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/busRouteTextView"
+        app:layout_constraintBottom_toBottomOf="@+id/busRouteTextView"
+        android:background="@drawable/ic_baseline_arrow_back_ios_24"/>
+
+    <TextView
+        android:id="@+id/grandViewC"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/busRouteTextView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:text="(7:10) grand View C 1HS"
+        android:textSize="23sp"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/black"/>
+
+    <Button
+        android:id="@+id/grandViewCStartButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/grandViewC"
+        app:layout_constraintStart_toStartOf="@+id/grandViewC"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="20dp"
+        android:text="시작"
+        android:textSize="15sp"/>
+
+    <Button
+        android:id="@+id/grandViewCStopButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/grandViewC"
+        app:layout_constraintStart_toEndOf="@+id/grandViewCStartButton"
+        app:layout_constraintEnd_toEndOf="@+id/grandViewC"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="5dp"
+        android:text="도착"
+        android:textSize="15sp"
+        />
+    <TextView
+        android:id="@+id/grandViewA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/grandViewCStartButton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:text="(7:12) grand View A 1HS"
+        android:textSize="23sp"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/black"/>
+
+    <Button
+        android:id="@+id/grandViewAStartButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/grandViewA"
+        app:layout_constraintStart_toStartOf="@+id/grandViewA"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="20dp"
+        android:text="시작"
+        android:textSize="15sp"/>
+
+    <Button
+        android:id="@+id/grandViewAStopButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/grandViewA"
+        app:layout_constraintStart_toEndOf="@+id/grandViewAStartButton"
+        app:layout_constraintEnd_toEndOf="@+id/grandViewA"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="5dp"
+        android:text="도착"
+        android:textSize="15sp"
+        />
+
+    <TextView
+        android:id="@+id/mỹPhúc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/grandViewAStartButton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:text="(7:15) mỹ Phúc A 2HS"
+        android:textSize="23sp"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/black"/>
+
+    <Button
+        android:id="@+id/mỹPhúcStartButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/mỹPhúc"
+        app:layout_constraintStart_toStartOf="@+id/mỹPhúc"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="20dp"
+        android:text="시작"
+        android:textSize="15sp"/>
+
+    <Button
+        android:id="@+id/mỹPhúcStopButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/mỹPhúc"
+        app:layout_constraintStart_toEndOf="@+id/mỹPhúcStartButton"
+        app:layout_constraintEnd_toEndOf="@+id/mỹPhúc"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="5dp"
+        android:text="도착"
+        android:textSize="15sp"
+        />
+    <TextView
+        android:id="@+id/lýLongTường"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/mỹPhúcStartButton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:text="(7:17) 44lýLongTường 4HS"
+        android:textSize="23sp"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/black"/>
+
+    <Button
+        android:id="@+id/lýLongTườngStartButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/lýLongTường"
+        app:layout_constraintStart_toStartOf="@+id/lýLongTường"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="20dp"
+        android:text="시작"
+        android:textSize="15sp"/>
+
+    <Button
+        android:id="@+id/lýLongTườngStopButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/lýLongTường"
+        app:layout_constraintStart_toEndOf="@+id/lýLongTườngStartButton"
+        app:layout_constraintEnd_toEndOf="@+id/lýLongTường"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="5dp"
+        android:text="도착"
+        android:textSize="15sp"
+        />
+
+    <TextView
+        android:id="@+id/mỹPhátSopanDonpan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/lýLongTườngStartButton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:text="(7:22) mỹphátSopanDonpan 2HS"
+        android:textSize="23sp"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/black"/>
+
+    <Button
+        android:id="@+id/mỹphátSopanDonpanStartButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/mỹPhátSopanDonpan"
+        app:layout_constraintStart_toStartOf="@+id/mỹPhátSopanDonpan"
+        app:layout_constraintEnd_toStartOf="@+id/mỹphátSopanDonpanStopButton"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="20dp"
+        android:text="시작"
+        android:textSize="15sp"/>
+
+    <Button
+        android:id="@+id/mỹphátSopanDonpanStopButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/mỹPhátSopanDonpan"
+        app:layout_constraintStart_toEndOf="@+id/mỹphátSopanDonpanStartButton"
+        app:layout_constraintEnd_toEndOf="@+id/mỹPhátSopanDonpan"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="5dp"
+        android:text="도착"
+        android:textSize="15sp"
+        />
+    <TextView
+        android:id="@+id/mỹĐứcDominosPizza"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/mỹphátSopanDonpanStartButton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:text="(7:24) mỹĐứcDomino’sPizza 1HS"
+        android:textSize="23sp"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/black"/>
+
+    <Button
+        android:id="@+id/mỹĐứcDominoPizzaStartButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/mỹĐứcDominosPizza"
+        app:layout_constraintStart_toStartOf="@+id/mỹĐứcDominosPizza"
+        app:layout_constraintEnd_toStartOf="@+id/mỹĐứcDominoPizzaStopButton"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="20dp"
+        android:text="시작"
+        android:textSize="15sp"/>
+
+    <Button
+        android:id="@+id/mỹĐứcDominoPizzaStopButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/mỹĐứcDominosPizza"
+        app:layout_constraintStart_toEndOf="@+id/mỹĐứcDominoPizzaStartButton"
+        app:layout_constraintEnd_toEndOf="@+id/mỹĐứcDominosPizza"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="5dp"
+        android:text="도착"
+        android:textSize="15sp"
+        />
+
+    <TextView
+        android:id="@+id/mỹKhánhTexas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/mỹĐứcDominoPizzaStartButton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:text="(7:26) mỹKhánhTexas 1HS"
+        android:textSize="23sp"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/black"/>
+
+    <Button
+        android:id="@+id/mỹKhánhTexasStartButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/mỹKhánhTexas"
+        app:layout_constraintStart_toStartOf="@+id/mỹKhánhTexas"
+        app:layout_constraintEnd_toStartOf="@+id/mỹKhánhTexasStopButton"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="20dp"
+        android:text="시작"
+        android:textSize="15sp"/>
+
+    <Button
+        android:id="@+id/mỹKhánhTexasStopButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/mỹKhánhTexas"
+        app:layout_constraintStart_toEndOf="@+id/mỹKhánhTexasStartButton"
+        app:layout_constraintEnd_toEndOf="@+id/mỹKhánhTexas"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="5dp"
+        android:text="도착"
+        android:textSize="15sp"
+        />
+    <TextView
+        android:id="@+id/happyValleyBlock1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/mỹKhánhTexasStartButton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:text="(7:35) happyValleyBlock1 11HS"
+        android:textSize="28sp"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/black"/>
+
+    <Button
+        android:id="@+id/happyValleyBlock1StartButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/happyValleyBlock1"
+        app:layout_constraintStart_toStartOf="@+id/happyValleyBlock1"
+        app:layout_constraintEnd_toStartOf="@+id/happyValleyBlock1StopButton"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="20dp"
+        android:text="시작"
+        android:textSize="15sp"/>
+
+    <Button
+        android:id="@+id/happyValleyBlock1StopButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/happyValleyBlock1"
+        app:layout_constraintStart_toEndOf="@+id/happyValleyBlock1StartButton"
+        app:layout_constraintEnd_toEndOf="@+id/happyValleyBlock1"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="5dp"
+        android:text="도착"
+        android:textSize="15sp"
+        />
 </androidx.constraintlayout.widget.ConstraintLayout>
