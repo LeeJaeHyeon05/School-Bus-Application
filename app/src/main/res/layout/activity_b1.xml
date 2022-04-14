@@ -118,8 +118,8 @@
         android:layout_height="wrap_content"
         app:layout_constraintTop_toBottomOf="@+id/Landmark"
         app:layout_constraintStart_toStartOf="@+id/Landmark"
+        app:layout_constraintEnd_toStartOf="@+id/LandmarkStopButton"
         android:layout_marginTop="10dp"
-        android:layout_marginStart="50dp"
         android:text="시작"
         android:textSize="15sp"/>
 
@@ -189,8 +189,8 @@
         android:layout_height="wrap_content"
         app:layout_constraintTop_toBottomOf="@+id/Landmark5"
         app:layout_constraintStart_toStartOf="@+id/Landmark5"
+        app:layout_constraintEnd_toStartOf="@+id/landmark5StopButton"
         android:layout_marginTop="10dp"
-        android:layout_marginStart="20dp"
         android:text="시작"
         android:textSize="15sp"/>
 
