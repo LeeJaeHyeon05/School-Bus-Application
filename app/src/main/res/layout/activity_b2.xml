@@ -4,6 +4,164 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".B2Activity">
+    tools:context=".B2Activity"
+    android:background="@color/backgroundColor">
+
+
+    <TextView
+        android:id="@+id/busRouteTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginStart="20sp"
+        android:layout_marginTop="20dp"
+        android:textSize="30sp"
+        android:textColor="@color/black"
+        android:text="@string/busRouteText"/>
+
+    <TextView
+        android:id="@+id/sapphiraSaigonPearlTower"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/busRouteTextView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:text="(7:00) sapphiraSaigonPearlTower 4HS"
+        android:textSize="23sp"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/black"/>
+
+    <Button
+        android:id="@+id/sapphiraSaigonPearlTowerStartButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/sapphiraSaigonPearlTower"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="60dp"
+        android:text="시작"
+        android:textSize="15sp"/>
+
+    <Button
+        android:id="@+id/sapphiraSaigonPearlTowerStopButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/sapphiraSaigonPearlTower"
+        app:layout_constraintStart_toEndOf="@+id/sapphiraSaigonPearlTowerStartButton"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="10dp"
+        android:text="도착"
+        android:textSize="15sp"
+        />
+    <TextView
+        android:id="@+id/newcity1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/sapphiraSaigonPearlTowerStartButton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:text="(7:00) newcity1 4HS"
+        android:textSize="28sp"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/black"/>
+
+    <Button
+        android:id="@+id/newcity1StartButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/newcity1"
+        app:layout_constraintStart_toStartOf="@+id/newcity1"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="20dp"
+        android:text="시작"
+        android:textSize="15sp"/>
+
+    <Button
+        android:id="@+id/newcity1StopButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/newcity1"
+        app:layout_constraintStart_toEndOf="@+id/newcity1StartButton"
+        app:layout_constraintEnd_toEndOf="@+id/newcity1"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="5dp"
+        android:text="도착"
+        android:textSize="15sp"
+        />
+    <TextView
+        android:id="@+id/newcity2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/newcity1StartButton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:text="(7:00) newcity2 4HS"
+        android:textSize="28sp"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/black"/>
+
+    <Button
+        android:id="@+id/newcity2StartButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/newcity2"
+        app:layout_constraintStart_toStartOf="@+id/newcity2"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="20dp"
+        android:text="시작"
+        android:textSize="15sp"/>
+
+    <Button
+        android:id="@+id/newcity2StopButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/newcity2"
+        app:layout_constraintStart_toEndOf="@+id/newcity2StartButton"
+        app:layout_constraintEnd_toEndOf="@+id/newcity2"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="5dp"
+        android:text="도착"
+        android:textSize="15sp"
+        />
+
+    <TextView
+        android:id="@+id/theSunAvenueSAVSubgate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/newcity2StartButton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:text="(7:27) theSunAvenueSAVSubgate 1HS"
+        android:textSize="23sp"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/black"/>
+
+    <Button
+        android:id="@+id/theSunAvenueSAVSubgateStartButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/theSunAvenueSAVSubgate"
+        app:layout_constraintStart_toStartOf="@+id/theSunAvenueSAVSubgate"
+        app:layout_constraintEnd_toEndOf="@+id/theSunAvenueSAVSubgate"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="50dp"
+        android:text="시작"
+        android:textSize="15sp"/>
+
+    <Button
+        android:id="@+id/theSunAvenueSAVSubgateStopButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/theSunAvenueSAVSubgate"
+        app:layout_constraintStart_toEndOf="@+id/theSunAvenueSAVSubgateStartButton"
+        app:layout_constraintEnd_toEndOf="@+id/theSunAvenueSAVSubgate"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="5dp"
+        android:text="도착"
+        android:textSize="15sp"
+        />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

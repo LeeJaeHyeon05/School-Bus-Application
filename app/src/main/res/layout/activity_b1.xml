@@ -23,11 +23,11 @@
         android:id="@+id/Cantavil"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:layout_constraintTop_toBottomOf="@+id/busRouteTextView"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/busRouteTextView"
         android:text="(7:00) Cantavil 4HS"
-        android:textSize="28sp"
+        android:textSize="23sp"
         android:layout_marginTop="10dp"
         android:textColor="@color/black"/>
 
@@ -63,7 +63,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         android:text="(7:15) Park 7 2HS"
-        android:textSize="28sp"
+        android:textSize="23sp"
         android:layout_marginTop="10dp"
         android:textColor="@color/black"/>
 
@@ -74,7 +74,7 @@
         app:layout_constraintTop_toBottomOf="@+id/Park"
         app:layout_constraintStart_toStartOf="@+id/Park"
         android:layout_marginTop="10dp"
-        android:layout_marginStart="20dp"
+        android:layout_marginStart="10dp"
         android:text="시작"
         android:textSize="15sp"/>
 
@@ -86,7 +86,7 @@
         app:layout_constraintStart_toEndOf="@+id/ParkStartButton"
         app:layout_constraintEnd_toEndOf="@+id/Park"
         android:layout_marginTop="10dp"
-        android:layout_marginStart="5dp"
+        android:layout_marginStart="10dp"
         android:text="도착"
         android:textSize="15sp"
         />
@@ -99,7 +99,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         android:text="(7:17) Landmark 1 1HS"
-        android:textSize="28sp"
+        android:textSize="23sp"
         android:layout_marginTop="10dp"
         android:textColor="@color/black"/>
 
@@ -109,8 +109,8 @@
         android:layout_height="wrap_content"
         app:layout_constraintTop_toBottomOf="@+id/Landmark"
         app:layout_constraintStart_toStartOf="@+id/Landmark"
-        app:layout_constraintEnd_toEndOf="@+id/Landmark"
         android:layout_marginTop="10dp"
+        android:layout_marginStart="50dp"
         android:text="시작"
         android:textSize="15sp"/>
 
@@ -125,6 +125,81 @@
         android:text="도착"
         android:textSize="15sp"
         />
+
+    <TextView
+        android:id="@+id/landmarkPlus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/LandmarkStartButton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:text="(7:19) Landmark Plus, GS25 2HS)"
+        android:textSize="25sp"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/black"/>
+
+    <Button
+        android:id="@+id/landmarkPlusStartButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/landmarkPlus"
+        app:layout_constraintStart_toStartOf="@+id/landmarkPlus"
+        app:layout_constraintEnd_toStartOf="@+id/LandmarkStopButton"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="20dp"
+        android:text="시작"
+        android:textSize="15sp"/>
+
+    <Button
+        android:id="@+id/landmarkPlusStopButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/landmarkPlus"
+        app:layout_constraintStart_toEndOf="@+id/landmarkPlusStartButton"
+        app:layout_constraintEnd_toEndOf="@+id/landmarkPlus"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="5dp"
+        android:text="도착"
+        android:textSize="15sp"
+        />
+    <TextView
+        android:id="@+id/Landmark5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/landmarkPlusStartButton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:text="(7:22) Landmark 5, L81, 1HS"
+        android:textSize="23sp"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/black"/>
+
+    <Button
+        android:id="@+id/landmark5StartButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/Landmark5"
+        app:layout_constraintStart_toStartOf="@+id/Landmark5"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="20dp"
+        android:text="시작"
+        android:textSize="15sp"/>
+
+    <Button
+        android:id="@+id/landmark5StopButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/Landmark5"
+        app:layout_constraintStart_toEndOf="@+id/landmark5StartButton"
+        app:layout_constraintEnd_toEndOf="@+id/Landmark5"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="5dp"
+        android:text="도착"
+        android:textSize="15sp"
+        />
+
+
+
 
 
 

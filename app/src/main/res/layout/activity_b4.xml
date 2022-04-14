@@ -4,6 +4,164 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".B4Activity">
+    tools:context=".B4Activity"
+    android:background="@color/backgroundColor">
 
+    <TextView
+        android:id="@+id/busRouteTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginStart="20sp"
+        android:layout_marginTop="20dp"
+        android:textSize="30sp"
+        android:textColor="@color/black"
+        android:text="@string/busRouteText"/>
+
+    <TextView
+        android:id="@+id/skyGarden1and2CircleK"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/busRouteTextView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:text="(7:10) skyGarden1and2CircleK 4HS"
+        android:textSize="23sp"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/black"/>
+
+    <Button
+        android:id="@+id/skyGarden1and2CircleKStartButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/skyGarden1and2CircleK"
+        app:layout_constraintStart_toStartOf="@+id/skyGarden1and2CircleK"
+        app:layout_constraintEnd_toStartOf="@+id/skyGarden1and2CircleKStopButton"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="20dp"
+        android:text="시작"
+        android:textSize="15sp"/>
+
+    <Button
+        android:id="@+id/skyGarden1and2CircleKStopButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/skyGarden1and2CircleK"
+        app:layout_constraintStart_toEndOf="@+id/skyGarden1and2CircleKStartButton"
+        app:layout_constraintEnd_toEndOf="@+id/skyGarden1and2CircleK"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="5dp"
+        android:text="도착"
+        android:textSize="15sp"
+        />
+
+
+    <TextView
+        android:id="@+id/riverParkBlockA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/skyGarden1and2CircleKStartButton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:text="(7:15) riverParkBlockAWooriBank 2HS"
+        android:textSize="23sp"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/black"/>
+
+    <Button
+        android:id="@+id/riverParkBlockAStartButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/riverParkBlockA"
+        app:layout_constraintStart_toStartOf="@+id/riverParkBlockA"
+        app:layout_constraintEnd_toStartOf="@+id/riverParkBlockAStopButton"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="20dp"
+        android:text="시작"
+        android:textSize="15sp"/>
+
+    <Button
+        android:id="@+id/riverParkBlockAStopButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/riverParkBlockA"
+        app:layout_constraintStart_toEndOf="@+id/riverParkBlockAStartButton"
+        app:layout_constraintEnd_toEndOf="@+id/riverParkBlockA"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="5dp"
+        android:text="도착"
+        android:textSize="15sp"
+        />
+    <TextView
+        android:id="@+id/MeetworkMỹKhánh3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/riverParkBlockAStartButton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:text="(7:18) MeetworkMỹKhánh3 1HS"
+        android:textSize="23sp"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/black"/>
+
+    <Button
+        android:id="@+id/MeetworkMỹKhánh3StartButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/MeetworkMỹKhánh3"
+        app:layout_constraintStart_toStartOf="@+id/MeetworkMỹKhánh3"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="20dp"
+        android:text="시작"
+        android:textSize="15sp"/>
+
+    <Button
+        android:id="@+id/MeetworkMỹKhánh3StopButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/MeetworkMỹKhánh3"
+        app:layout_constraintStart_toEndOf="@+id/MeetworkMỹKhánh3StartButton"
+        app:layout_constraintEnd_toEndOf="@+id/MeetworkMỹKhánh3"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="5dp"
+        android:text="도착"
+        android:textSize="15sp"
+        />
+
+    <TextView
+        android:id="@+id/riverAParkVBIBank"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/MeetworkMỹKhánh3StartButton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:text="(7:22) riverParkVBIBank 2HS"
+        android:textSize="23sp"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/black"/>
+
+    <Button
+        android:id="@+id/riverParkVBIBankStartButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/riverParkVBIBank"
+        app:layout_constraintStart_toStartOf="@+id/riverParkVBIBank"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="20dp"
+        android:text="시작"
+        android:textSize="15sp"/>
+
+    <Button
+        android:id="@+id/riverParkVBIBankStopButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/riverParkVBIBank"
+        app:layout_constraintStart_toEndOf="@+id/riverParkVBIBankStartButton"
+        app:layout_constraintEnd_toEndOf="@+id/riverParkVBIBank"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="5dp"
+        android:text="도착"
+        android:textSize="15sp"
+        />
 </androidx.constraintlayout.widget.ConstraintLayout>
