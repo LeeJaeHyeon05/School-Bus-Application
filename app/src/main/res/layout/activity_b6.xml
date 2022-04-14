@@ -28,4 +28,151 @@
         app:layout_constraintBottom_toBottomOf="@+id/busRouteTextView"
         android:background="@drawable/ic_baseline_arrow_back_ios_24"/>
 
+    <TextView
+        android:id="@+id/skyGarden3CircleK"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/busRouteTextView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:text="(7:15) skyGarden3CircleK 5HS"
+        android:textSize="23sp"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/black"/>
+
+    <Button
+        android:id="@+id/skyGarden3CircleKStartButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/skyGarden3CircleK"
+        app:layout_constraintStart_toStartOf="@+id/skyGarden3CircleK"
+        app:layout_constraintEnd_toStartOf="@+id/skyGarden3CircleKStopButton"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="20dp"
+        android:text="시작"
+        android:textSize="15sp"/>
+
+    <Button
+        android:id="@+id/skyGarden3CircleKStopButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/skyGarden3CircleK"
+        app:layout_constraintStart_toEndOf="@+id/skyGarden3CircleKStartButton"
+        app:layout_constraintEnd_toEndOf="@+id/skyGarden3CircleK"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="5dp"
+        android:text="도착"
+        android:textSize="15sp"
+        />
+    <TextView
+        android:id="@+id/scenicValley2ParisBaguette"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/skyGarden3CircleKStartButton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:text="(7:22) scenicValley2ParisBaguette 1HS"
+        android:textSize="23sp"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/black"/>
+
+    <Button
+        android:id="@+id/scenicValley2ParisBaguetteStartButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/scenicValley2ParisBaguette"
+        app:layout_constraintStart_toStartOf="@+id/scenicValley2ParisBaguette"
+        app:layout_constraintEnd_toStartOf="@+id/scenicValley2ParisBaguetteStopButton"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="20dp"
+        android:text="시작"
+        android:textSize="15sp"/>
+
+    <Button
+        android:id="@+id/scenicValley2ParisBaguetteStopButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/scenicValley2ParisBaguette"
+        app:layout_constraintStart_toEndOf="@+id/scenicValley2ParisBaguetteStartButton"
+        app:layout_constraintEnd_toEndOf="@+id/scenicValley2ParisBaguette"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="5dp"
+        android:text="도착"
+        android:textSize="15sp"
+        />
+    <TextView
+        android:id="@+id/scenicValley1Gate1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/scenicValley2ParisBaguetteStartButton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:text="(7:25) scenicValley1Gate1 11HS"
+        android:textSize="23sp"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/black"/>
+
+    <Button
+        android:id="@+id/scenicValley1Gate1StartButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/scenicValley1Gate1"
+        app:layout_constraintStart_toStartOf="@+id/scenicValley1Gate1"
+        app:layout_constraintEnd_toStartOf="@+id/scenicValley1Gate1StopButton"
+        android:layout_marginTop="10dp"
+        android:text="시작"
+        android:textSize="15sp"/>
+
+    <Button
+        android:id="@+id/scenicValley1Gate1StopButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/scenicValley1Gate1"
+        app:layout_constraintStart_toEndOf="@+id/scenicValley1Gate1StartButton"
+        app:layout_constraintEnd_toEndOf="@+id/scenicValley1Gate1"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="5dp"
+        android:text="도착"
+        android:textSize="15sp"
+        />
+    <TextView
+        android:id="@+id/greenValley"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/scenicValley1Gate1StartButton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:text="(7:34) greenValley 정문 3HS"
+        android:textSize="23sp"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/black"/>
+
+    <Button
+        android:id="@+id/greenValleyStartButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/greenValley"
+        app:layout_constraintStart_toStartOf="@+id/greenValley"
+        app:layout_constraintEnd_toStartOf="@+id/greenValleyStopButton"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="20dp"
+        android:text="시작"
+        android:textSize="15sp"/>
+
+    <Button
+        android:id="@+id/greenValleyStopButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/greenValley"
+        app:layout_constraintStart_toEndOf="@+id/greenValleyStartButton"
+        app:layout_constraintEnd_toEndOf="@+id/greenValley"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="5dp"
+        android:text="도착"
+        android:textSize="15sp"
+        />
+
+
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>

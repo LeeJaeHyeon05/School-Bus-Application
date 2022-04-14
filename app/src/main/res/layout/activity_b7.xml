@@ -29,5 +29,155 @@
         android:background="@drawable/ic_baseline_arrow_back_ios_24"/>
 
 
+    <TextView
+        android:id="@+id/hưngPhúcRiversideStarbucks"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/busRouteTextView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:text="(7:10) hưngPhúcRiversideStarbucks 1HS"
+        android:textSize="23sp"
+        android:layout_marginTop="20dp"
+        android:gravity="center_horizontal"
+        android:textColor="@color/black"/>
+
+    <Button
+        android:id="@+id/hưngPhúcRiversideStarbucksStartButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/hưngPhúcRiversideStarbucks"
+        app:layout_constraintStart_toStartOf="@+id/hưngPhúcRiversideStarbucks"
+        app:layout_constraintEnd_toStartOf="@+id/hưngPhúcRiversideStarbucksStopButton"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="20dp"
+        android:text="시작"
+        android:textSize="15sp"/>
+
+    <Button
+        android:id="@+id/hưngPhúcRiversideStarbucksStopButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/hưngPhúcRiversideStarbucks"
+        app:layout_constraintStart_toEndOf="@+id/hưngPhúcRiversideStarbucksStartButton"
+        app:layout_constraintEnd_toEndOf="@+id/hưngPhúcRiversideStarbucks"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="5dp"
+        android:text="도착"
+        android:textSize="15sp"
+        />
+
+    <TextView
+        android:id="@+id/namPhúcBaeMart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/hưngPhúcRiversideStarbucksStartButton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:text="(7:15) namPhúcBaeMart"
+        android:textSize="23sp"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/black"/>
+
+    <Button
+        android:id="@+id/namPhúcBaeMartStartButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/namPhúcBaeMart"
+        app:layout_constraintStart_toStartOf="@+id/namPhúcBaeMart"
+        app:layout_constraintEnd_toStartOf="@+id/namPhúcBaeMartStopButton"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="20dp"
+        android:text="시작"
+        android:textSize="15sp"/>
+
+    <Button
+        android:id="@+id/namPhúcBaeMartStopButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/namPhúcBaeMart"
+        app:layout_constraintStart_toEndOf="@+id/namPhúcBaeMartStartButton"
+        app:layout_constraintEnd_toEndOf="@+id/namPhúcBaeMart"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="5dp"
+        android:text="도착"
+        android:textSize="15sp"
+        />
+
+    <TextView
+        android:id="@+id/midtownKMartBlockM6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/namPhúcBaeMartStartButton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:text="(7:20) midtownK-MartBlockM6 2HS"
+        android:textSize="23sp"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/black"/>
+
+    <Button
+        android:id="@+id/midtownKMartBlockM6StartButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/midtownKMartBlockM6"
+        app:layout_constraintStart_toStartOf="@+id/midtownKMartBlockM6"
+        app:layout_constraintEnd_toStartOf="@+id/midtownKMartBlockM6StopButton"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="20dp"
+        android:text="시작"
+        android:textSize="15sp"/>
+
+    <Button
+        android:id="@+id/midtownKMartBlockM6StopButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/midtownKMartBlockM6"
+        app:layout_constraintStart_toEndOf="@+id/midtownKMartBlockM6StartButton"
+        app:layout_constraintEnd_toEndOf="@+id/midtownKMartBlockM6"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="5dp"
+        android:text="도착"
+        android:textSize="15sp"
+        />
+
+    <TextView
+        android:id="@+id/rivieraPointHighlandsCoffee"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/midtownKMartBlockM6StartButton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:text="(7:25) rivieraPointHighlandsCoffee 5HS"
+        android:textSize="23sp"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/black"/>
+
+    <Button
+        android:id="@+id/rivieraPointHighlandsCoffeeStartButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/rivieraPointHighlandsCoffee"
+        app:layout_constraintStart_toStartOf="@+id/rivieraPointHighlandsCoffee"
+        app:layout_constraintEnd_toStartOf="@+id/rivieraPointHighlandsCoffeeStopButton"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="20dp"
+        android:text="시작"
+        android:textSize="15sp"/>
+
+    <Button
+        android:id="@+id/rivieraPointHighlandsCoffeeStopButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/rivieraPointHighlandsCoffee"
+        app:layout_constraintStart_toEndOf="@+id/rivieraPointHighlandsCoffeeStartButton"
+        app:layout_constraintEnd_toEndOf="@+id/rivieraPointHighlandsCoffee"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="5dp"
+        android:text="도착"
+        android:textSize="15sp"
+        />
+
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
