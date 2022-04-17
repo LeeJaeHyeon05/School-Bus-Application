@@ -30,19 +30,6 @@ class B1Fragment : Fragment() {
     ): View? {
         mBinding = FragmentB1Binding.inflate(inflater, container, false)
 
-        val b1Text = binding.Test
-
-
-        myRef.addValueEventListener(object : ValueEventListener {
-            override fun onDataChange(snapshot: DataSnapshot) {
-                val value = snapshot.child("start")
-                b1Text.text = "$value"
-            }
-
-            override fun onCancelled(error: DatabaseError) {
-                Log.d("error", "실패")
-            }
-        })
 
         return binding.root
     }

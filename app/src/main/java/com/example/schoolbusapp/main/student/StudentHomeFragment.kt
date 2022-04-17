@@ -12,6 +12,7 @@ import com.example.schoolbusapp.databinding.FragmentStudentHomeBinding
 import com.example.schoolbusapp.databinding.FragmentTeacherHomeBinding
 import com.example.schoolbusapp.main.student.bus.*
 import com.google.android.material.tabs.TabLayoutMediator
+import java.text.SimpleDateFormat
 
 class StudentHomeFragment : Fragment() {
 
@@ -63,6 +64,10 @@ class StudentHomeFragment : Fragment() {
 
             }
         }.attach()
+
+        val currentTime : Long = System.currentTimeMillis()
+        val timeFormat = SimpleDateFormat("현재 시간은 HH시 : mm분")
+        binding.currentTime.text = timeFormat.format(currentTime)
 
 
         return binding.root

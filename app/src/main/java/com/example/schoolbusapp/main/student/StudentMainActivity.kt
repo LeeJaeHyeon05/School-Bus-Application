@@ -5,11 +5,11 @@ import android.os.Bundle
 import com.example.schoolbusapp.R
 import com.example.schoolbusapp.databinding.ActivityStudentMainBinding
 import com.google.android.material.bottomnavigation.BottomNavigationView
+import java.text.SimpleDateFormat
 
 class StudentMainActivity : AppCompatActivity() {
 
     private lateinit var homeFragment: StudentHomeFragment
-    private lateinit var chatFragment: StudentChatFragment
 
     private var mBinding: ActivityStudentMainBinding? = null
     private val binding get() = mBinding!!
@@ -28,6 +28,8 @@ class StudentMainActivity : AppCompatActivity() {
 
 
 
+
+
     }
     private val onBottomNavItemSelectedListener = BottomNavigationView.OnNavigationItemSelectedListener {
 
@@ -35,10 +37,6 @@ class StudentMainActivity : AppCompatActivity() {
             R.id.menu_home -> {
                 homeFragment = StudentHomeFragment.newInstance()
                 supportFragmentManager.beginTransaction().replace(R.id.fragments_frame, homeFragment).commit()
-            }
-            R.id.menu_chat -> {
-                chatFragment = StudentChatFragment.newInstance()
-                supportFragmentManager.beginTransaction().replace(R.id.fragments_frame, chatFragment).commit()
             }
         }
         true

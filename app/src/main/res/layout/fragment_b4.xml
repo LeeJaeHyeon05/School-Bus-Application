@@ -1,14 +1,85 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".main.student.bus.B1Fragment">
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".main.student.bus.B4Fragment">
 
-    <!-- TODO: Update blank fragment layout -->
     <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:id="@+id/startStopBusTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="15dp"
+        android:text="4호차 운행 중"
+        android:textSize="30sp"
+        android:textColor="#09A619"
+        />
 
-</FrameLayout>
+    <TextView
+        android:id="@+id/Cantavil"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/startStopBusTextView"
+        android:text="지남 (7:00) Cantavil 4HS"
+        android:textSize="23sp"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/gray"
+        />
+
+    <TextView
+        android:id="@+id/Park"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/Cantavil"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:text="도착 (7:15) Park 7 2HS"
+        android:textSize="23sp"
+        android:layout_marginTop="35dp"
+        android:textColor="@color/gray"/>
+
+    <TextView
+        android:id="@+id/Landmark"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/Park"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:text="아직 (7:17) Landmark 1 1HS"
+        android:textSize="23sp"
+        android:layout_marginTop="35dp"
+        android:textColor="@color/gray"/>
+
+
+    <TextView
+        android:id="@+id/landmarkPlus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/Landmark"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:text="아직 (7:19) Landmark Plus,GS25 2HS)"
+        android:gravity="center_horizontal"
+        android:textSize="25sp"
+        android:layout_marginTop="35dp"
+        android:textColor="@color/gray"/>
+
+    <TextView
+        android:id="@+id/Landmark5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/landmarkPlus"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:text="아직 (7:22) Landmark 5, L81, 1HS"
+        android:textSize="23sp"
+        android:layout_marginTop="35dp"
+        android:textColor="@color/black"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

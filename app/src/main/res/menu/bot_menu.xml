@@ -6,9 +6,5 @@
         android:title="@string/menuHomeText"
         android:icon="@drawable/ic_baseline_home_24"/>
 
-    <item
-        android:id="@+id/menu_chat"
-        android:title="@string/menuChatText"
-        android:icon="@drawable/ic_baseline_chat_bubble_24"/>
 
 </menu>
