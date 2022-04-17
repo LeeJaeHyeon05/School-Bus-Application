@@ -74,7 +74,8 @@
         android:text="(7:22) scenicValley2ParisBaguette 1HS"
         android:textSize="23sp"
         android:layout_marginTop="10dp"
-        android:textColor="@color/black"/>
+        android:textColor="@color/black"
+        android:gravity="center_horizontal"/>
 
     <Button
         android:id="@+id/scenicValley2ParisBaguetteStartButton"
