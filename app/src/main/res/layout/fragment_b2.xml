@@ -14,7 +14,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         android:layout_marginTop="15dp"
-        android:text="1호차 운행 중"
+        android:text="2호차 운행 중"
         android:textSize="30sp"
         android:textColor="#09A619"
         />

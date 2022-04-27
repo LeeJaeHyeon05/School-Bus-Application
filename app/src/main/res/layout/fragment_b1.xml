@@ -26,7 +26,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/startStopBusTextView"
-        android:text="지남 (7:00) Cantavil 4HS"
+        android:text="(7:00) Cantavil 4HS"
         android:textSize="23sp"
         android:layout_marginTop="10dp"
         android:textColor="@color/gray"
@@ -39,10 +39,10 @@
         app:layout_constraintTop_toBottomOf="@+id/Cantavil"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        android:text="도착 (7:15) Park 7 2HS"
+        android:text="(7:15) Park 7 2HS"
         android:textSize="23sp"
         android:layout_marginTop="35dp"
-        android:textColor="@color/black"/>
+        android:textColor="@color/gray"/>
 
     <TextView
         android:id="@+id/Landmark"
@@ -51,7 +51,7 @@
         app:layout_constraintTop_toBottomOf="@+id/Park"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        android:text="아직 (7:17) Landmark 1 1HS"
+        android:text="(7:17) Landmark 1 1HS"
         android:textSize="23sp"
         android:layout_marginTop="35dp"
         android:textColor="@color/gray"/>
@@ -64,7 +64,7 @@
         app:layout_constraintTop_toBottomOf="@+id/Landmark"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        android:text="아직 (7:19) Landmark Plus,GS25 2HS)"
+        android:text="(7:19) Landmark Plus,GS25 2HS)"
         android:gravity="center_horizontal"
         android:textSize="25sp"
         android:layout_marginTop="35dp"
@@ -77,7 +77,7 @@
         app:layout_constraintTop_toBottomOf="@+id/landmarkPlus"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        android:text="아직 (7:22) Landmark 5, L81, 1HS"
+        android:text="(7:22) Landmark 5, L81, 1HS"
         android:textSize="23sp"
         android:layout_marginTop="35dp"
         android:textColor="@color/gray"/>
