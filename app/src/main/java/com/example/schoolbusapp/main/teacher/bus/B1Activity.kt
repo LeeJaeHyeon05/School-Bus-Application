@@ -1,5 +1,6 @@
 package com.example.schoolbusapp
 
+import android.content.ContentValues.TAG
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
@@ -10,6 +11,8 @@ import com.google.firebase.database.DataSnapshot
 import com.google.firebase.database.DatabaseError
 import com.google.firebase.database.FirebaseDatabase
 import com.google.firebase.database.ValueEventListener
+import com.google.firebase.ktx.Firebase
+import com.google.firebase.firestore.ktx.firestore
 import com.google.firebase.ktx.Firebase
 
 class B1Activity : AppCompatActivity() {
@@ -26,6 +29,29 @@ class B1Activity : AppCompatActivity() {
         csb1.setOnClickListener {
             val b1 = myRef.child("start")
             b1.setValue(true)
+        val db = Firebase.firestore
+
+
+        val cantavilStartButton = findViewById<Button>(R.id.cantavilStartButton)
+        val ParkStartButton = findViewById<Button>(R.id.ParkStartButton)
+        val LandmarkStartButton = findViewById<Button>(R.id.LandmarkStartButton)
+        val landmarkPlusStartButton = findViewById<Button>(R.id.landmarkPlusStartButton)
+        val landmark5StartButton = findViewById<Button>(R.id.landmark5StartButton)
+
+        cantavilStartButton.setOnClickListener {
+            val bus1Info = db.collection("busInfo").document("b1")
+            bus1Info.update("cantavil", true)
+                .addOnSuccessListener {
+                    Log.d(TAG, "성공")
+                }
+                .addOnCanceledListener {
+                    Log.d(TAG, "실패")
+                }
+        }
+
+
+
+
 
         }
 
