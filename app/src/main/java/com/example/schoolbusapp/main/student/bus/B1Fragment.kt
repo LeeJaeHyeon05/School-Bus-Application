@@ -37,7 +37,28 @@ class B1Fragment : Fragment() {
 
         val db = Firebase.firestore
 
-        val cantavil = binding.Cantavil
+        val docRef = db.collection("busInfo").document("b1")
+        docRef.addSnapshotListener { snapshot, e ->
+            if (e != null) {
+                return@addSnapshotListener
+            }
+
+            if (snapshot != null && snapshot.exists()) {
+                val startText = snapshot.data!!["cantavil"].toString()
+                binding.Cantavil.text = startText
+
+                Log.d(TAG, "성공")
+            } else {
+                Log.d(TAG, " data: null")
+            }
+        }
+
+
+        return binding.root
+    }
+
+
+}
 
 //        db.collection("busInfo")
 //            .whereEqualTo("cantavil",  true)
@@ -67,26 +88,3 @@ class B1Fragment : Fragment() {
 //                Toast.makeText(requireContext(), "불러오기 실패", Toast.LENGTH_SHORT).show()
 //                binding.startStopBusTextView.setTextColor(Color.RED)
 //            }
-
-
-        val docRef = db.collection("busInfo").document("cantavil")
-        docRef.addSnapshotListener { snapshot, e ->
-            if (e != null) {
-                return@addSnapshotListener
-            }
-
-            if (snapshot != null && snapshot.exists()) {
-                binding.Cantavil.text = snapshot.data!!["start"].toString()
-                binding.Cantavil.text = snapshot.data!!["end"].toString()
-                Log.d(TAG, "성공")
-            } else {
-                Log.d(TAG, " data: null")
-            }
-        }
-
-
-        return binding.root
-    }
-
-
-}

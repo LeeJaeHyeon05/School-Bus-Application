@@ -17,7 +17,7 @@ class TeacherLoginActivity : AppCompatActivity() {
     private var mBinding : ActivityTeacherLoginBinding? = null
     private val binding get() = mBinding!!
 
-    private val IP = IdPassWord("teacher", "kgsteacher123")
+    private val IP = IdPassWord("kgs", "kgs1")
 
 
     override fun onCreate(savedInstanceState: Bundle?) {

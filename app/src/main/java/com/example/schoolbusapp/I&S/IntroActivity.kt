@@ -7,6 +7,7 @@ import android.widget.Toast
 import com.example.schoolbusapp.databinding.ActivityIntroBinding
 import com.example.schoolbusapp.login.StudentLoginActivity
 import com.example.schoolbusapp.login.TeacherLoginActivity
+import com.example.schoolbusapp.main.StudentMainActivity
 
 class IntroActivity : AppCompatActivity() {
 
@@ -20,7 +21,7 @@ class IntroActivity : AppCompatActivity() {
         setContentView(binding.root)
 
         binding.studentImageView.setOnClickListener {
-            startActivity(Intent(this, StudentLoginActivity::class.java))
+            startActivity(Intent(this, StudentMainActivity::class.java))
         }
         binding.teacherImageView.setOnClickListener {
             startActivity(Intent(this, TeacherLoginActivity::class.java))
