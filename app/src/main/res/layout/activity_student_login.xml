@@ -7,6 +7,13 @@
     tools:context=".login.StudentLoginActivity"
     android:background="@color/backgroundColor">
 
+    <Button
+        android:id="@+id/bs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
     <TextView
         android:id="@+id/creditTextView"
         android:layout_width="wrap_content"

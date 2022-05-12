@@ -77,9 +77,10 @@ class B1Fragment : Fragment() {
 
             if (snapshot != null && snapshot.exists()) {
                 binding.Cantavil.text = snapshot.data!!["start"].toString()
+                binding.Cantavil.text = snapshot.data!!["end"].toString()
                 Log.d(TAG, "성공")
             } else {
-
+                Log.d(TAG, " data: null")
             }
         }
 

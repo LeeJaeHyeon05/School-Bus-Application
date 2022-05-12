@@ -3,6 +3,7 @@ package com.example.schoolbusapp.login
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.Button
 import android.widget.Toast
 import com.example.schoolbusapp.R
 import com.example.schoolbusapp.TeacherMainActivity
@@ -34,6 +35,10 @@ class TeacherLoginActivity : AppCompatActivity() {
         val timeFormat = SimpleDateFormat("HH시 : mm분")
         binding.studentLoginTimeTextView.text = timeFormat.format(currentTime)
 
+        val test = findViewById<Button>(R.id.bs1)
+        test.setOnClickListener {
+            startActivity(Intent(this, TeacherMainActivity::class.java))
+        }
 
         initLogin()
     }

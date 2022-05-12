@@ -5,6 +5,7 @@ import android.content.SharedPreferences
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.preference.PreferenceManager
+import android.widget.Button
 import android.widget.Toast
 import com.example.schoolbusapp.R
 import com.example.schoolbusapp.databinding.ActivityStudentLoginBinding
@@ -41,7 +42,10 @@ class StudentLoginActivity : AppCompatActivity() {
         val pref = this.getPreferences(0)
         val editor = pref.edit()
 
-
+        val test = findViewById<Button>(R.id.bs)
+        test.setOnClickListener {
+            startActivity(Intent(this, StudentMainActivity::class.java))
+        }
 
 
         initLogin()
