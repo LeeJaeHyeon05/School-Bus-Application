@@ -22,4 +22,5 @@
     <string name="bus5Text">5호차</string>
     <string name="bus6Text">6호차</string>
     <string name="bus7Text">7호차</string>
+    <string name="busStartText">버스\n운행시작</string>
 </resources>

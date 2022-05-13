@@ -3,6 +3,7 @@ package com.example.schoolbusapp
 import android.content.ContentValues.TAG
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.os.Message
 import android.util.Log
 import android.view.View
 import android.widget.Button
@@ -12,14 +13,11 @@ import com.google.firebase.database.DataSnapshot
 import com.google.firebase.database.DatabaseError
 import com.google.firebase.database.FirebaseDatabase
 import com.google.firebase.database.ValueEventListener
+import com.google.firebase.firestore.SetOptions
 import com.google.firebase.firestore.ktx.firestore
 import com.google.firebase.ktx.Firebase
 
 class B1Activity : AppCompatActivity() {
-
-    private val database = FirebaseDatabase.getInstance()
-    private val myRef = database.getReference("bus")
-
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -40,6 +38,43 @@ class B1Activity : AppCompatActivity() {
         val landmarkPlusStopButton = findViewById<Button>(R.id.landmarkPlusStopButton)
         val landmark5StartButton = findViewById<Button>(R.id.landmark5StartButton)
         val landmark5StopButton = findViewById<Button>(R.id.landmark5StopButton)
+
+        val startStopBusTextView = findViewById<TextView>(R.id.startStopBusTextView)
+
+        val startBtn = findViewById<Button>(R.id.startBus)
+        val stopBtn = findViewById<Button>(R.id.stopBus)
+
+        val busData = hashMapOf(
+            "startStop" to "1호차 운행중",
+            "cantavil" to "캔타빌",
+            "landmark1" to "랜드마크1",
+            "landmark5" to "랜드마크5",
+            "landmarkPlus" to "랜드마크 플러스",
+            "park7" to "파크7"
+        )
+
+        startBtn.setOnLongClickListener {
+            busInfo.update(busData as Map<String, Any>)
+                .addOnSuccessListener {
+                    Toast("버튼 성공")
+                    Log.d(TAG, "성공")
+                }
+                .addOnCanceledListener {
+                    Toast("실패 다시해주세요")
+                    Log.d(TAG, "실패")
+                }
+            true
+        }
+        stopBtn.setOnLongClickListener {
+            busInfo.update("startStop", "1호차 운행 중지")
+                .addOnSuccessListener {
+                    Toast("성공")
+                }
+                .addOnCanceledListener {
+                    Toast("실")
+                }
+            true
+        }
 
 
         cantavilStartButton.setOnClickListener {
@@ -254,12 +289,9 @@ class B1Activity : AppCompatActivity() {
                 }
             true
         }
-
-
-
-
-
-
+    }
+    private fun Toast(message: String) {
+        Toast.makeText(this, message, Toast.LENGTH_SHORT).show()
     }
     private fun backBtn() {
         val backBtn = findViewById<Button>(R.id.backPressedButton)

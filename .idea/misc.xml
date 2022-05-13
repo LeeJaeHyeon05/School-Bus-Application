@@ -49,6 +49,8 @@
         <entry key="app/src/main/res/layout/fragment_b1.xml" value="0.22735507246376813" />
         <entry key="app/src/main/res/layout/fragment_chat.xml" value="0.11676798378926039" />
         <entry key="app/src/main/res/layout/fragment_home.xml" value="0.11676798378926039" />
+        <entry key="app/src/main/res/menu/bot_menu.xml" value="0.12222222222222222" />
+        <entry key="app/src/main/res/menu/teacher_bot_menu.xml" value="0.12222222222222222" />
       </map>
     </option>
   </component>

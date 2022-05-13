@@ -49,12 +49,16 @@ class B1Fragment : Fragment() {
                 val startText3 = snapshot.data!!["landmark5"].toString()
                 val startText4 = snapshot.data!!["landmarkPlus"].toString()
                 val startText5 = snapshot.data!!["park7"].toString()
+                val startText6 = snapshot.data!!["startStop"].toString()
 
+                val busStartStop = binding.startStopBusTextView
                 binding.Cantavil.text = startText1
                 binding.landmarkPlus.text = startText4
                 binding.Park.text = startText5
                 binding.Landmark.text = startText2
                 binding.Landmark5.text = startText3
+                busStartStop.text = startText6
+
 
                 Log.d(TAG, "성공")
             } else {
