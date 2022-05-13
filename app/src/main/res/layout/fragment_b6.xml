@@ -20,7 +20,7 @@
         />
 
     <TextView
-        android:id="@+id/Cantavil"
+        android:id="@+id/skyGarden3CircleK"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:layout_constraintStart_toStartOf="parent"
@@ -33,10 +33,10 @@
         />
 
     <TextView
-        android:id="@+id/Park"
+        android:id="@+id/scenicValley2ParisBaguette"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:layout_constraintTop_toBottomOf="@+id/Cantavil"
+        app:layout_constraintTop_toBottomOf="@+id/skyGarden3CircleK"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         android:text="도착 (7:15) Park 7 2HS"
@@ -45,40 +45,28 @@
         android:textColor="@color/gray"/>
 
     <TextView
-        android:id="@+id/Landmark"
+        android:id="@+id/scenicValley1Gate1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:layout_constraintTop_toBottomOf="@+id/Park"
+        app:layout_constraintTop_toBottomOf="@+id/scenicValley2ParisBaguette"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         android:text="아직 (7:17) Landmark 1 1HS"
         android:textSize="23sp"
         android:layout_marginTop="35dp"
-        android:textColor="@color/black"/>
+        android:textColor="@color/gray"/>
 
 
     <TextView
-        android:id="@+id/landmarkPlus"
+        android:id="@+id/greenValley"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:layout_constraintTop_toBottomOf="@+id/Landmark"
+        app:layout_constraintTop_toBottomOf="@+id/scenicValley1Gate1"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         android:text="아직 (7:19) Landmark Plus,GS25 2HS)"
         android:gravity="center_horizontal"
         android:textSize="25sp"
-        android:layout_marginTop="35dp"
-        android:textColor="@color/gray"/>
-
-    <TextView
-        android:id="@+id/Landmark5"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:layout_constraintTop_toBottomOf="@+id/landmarkPlus"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        android:text="아직 (7:22) Landmark 5, L81, 1HS"
-        android:textSize="23sp"
         android:layout_marginTop="35dp"
         android:textColor="@color/gray"/>
 

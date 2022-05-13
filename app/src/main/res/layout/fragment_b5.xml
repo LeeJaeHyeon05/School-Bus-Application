@@ -20,7 +20,7 @@
         />
 
     <TextView
-        android:id="@+id/Cantavil"
+        android:id="@+id/grandViewC"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:layout_constraintStart_toStartOf="parent"
@@ -33,22 +33,22 @@
         />
 
     <TextView
-        android:id="@+id/Park"
+        android:id="@+id/grandViewA"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:layout_constraintTop_toBottomOf="@+id/Cantavil"
+        app:layout_constraintTop_toBottomOf="@+id/grandViewC"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         android:text="도착 (7:15) Park 7 2HS"
         android:textSize="23sp"
         android:layout_marginTop="35dp"
-        android:textColor="@color/black"/>
+        android:textColor="@color/gray"/>
 
     <TextView
-        android:id="@+id/Landmark"
+        android:id="@+id/myPhuc"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:layout_constraintTop_toBottomOf="@+id/Park"
+        app:layout_constraintTop_toBottomOf="@+id/grandViewA"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         android:text="아직 (7:17) Landmark 1 1HS"
@@ -58,10 +58,10 @@
 
 
     <TextView
-        android:id="@+id/landmarkPlus"
+        android:id="@+id/lýLongTường"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:layout_constraintTop_toBottomOf="@+id/Landmark"
+        app:layout_constraintTop_toBottomOf="@+id/myPhuc"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         android:text="아직 (7:19) Landmark Plus,GS25 2HS)"
@@ -71,15 +71,52 @@
         android:textColor="@color/gray"/>
 
     <TextView
-        android:id="@+id/Landmark5"
+        android:id="@+id/myPhatSopanDonpan"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:layout_constraintTop_toBottomOf="@+id/landmarkPlus"
+        app:layout_constraintTop_toBottomOf="@+id/lýLongTường"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         android:text="아직 (7:22) Landmark 5, L81, 1HS"
         android:textSize="23sp"
         android:layout_marginTop="35dp"
         android:textColor="@color/gray"/>
+
+    <TextView
+        android:id="@+id/myDucDominosPizza"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/myPhatSopanDonpan"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:text="아직 (7:22) Landmark 5, L81, 1HS"
+        android:textSize="23sp"
+        android:layout_marginTop="35dp"
+        android:textColor="@color/gray"/>
+
+    <TextView
+        android:id="@+id/myKhanhTexas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/myDucDominosPizza"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:text="아직 (7:22) Landmark 5, L81, 1HS"
+        android:textSize="23sp"
+        android:layout_marginTop="35dp"
+        android:textColor="@color/gray"/>
+
+    <TextView
+        android:id="@+id/happyValleyBlock1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/myKhanhTexas"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:text="아직 (7:22) Landmark 5, L81, 1HS"
+        android:textSize="23sp"
+        android:layout_marginTop="35dp"
+        android:textColor="@color/gray"/>
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
