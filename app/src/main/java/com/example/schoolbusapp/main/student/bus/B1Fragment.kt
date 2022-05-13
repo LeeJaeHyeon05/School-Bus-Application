@@ -44,8 +44,17 @@ class B1Fragment : Fragment() {
             }
 
             if (snapshot != null && snapshot.exists()) {
-                val startText = snapshot.data!!["cantavil"].toString()
-                binding.Cantavil.text = startText
+                val startText1 = snapshot.data!!["cantavil"].toString()
+                val startText2 = snapshot.data!!["landmark1"].toString()
+                val startText3 = snapshot.data!!["landmark5"].toString()
+                val startText4 = snapshot.data!!["landmarkPlus"].toString()
+                val startText5 = snapshot.data!!["park7"].toString()
+
+                binding.Cantavil.text = startText1
+                binding.landmarkPlus.text = startText4
+                binding.Park.text = startText5
+                binding.Landmark.text = startText2
+                binding.Landmark5.text = startText3
 
                 Log.d(TAG, "성공")
             } else {
