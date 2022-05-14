@@ -34,7 +34,7 @@ class B2Activity : AppCompatActivity() {
         val busData = hashMapOf(
             "startStop" to "2호차 운행중",
             "sapphiraSaigonPearlTower" to "사파이라사이공",
-            "newCity,ThuThiem1 " to "뉴시티1",
+            "newCity,ThuThiem1" to "뉴시티1",
             "newCity,ThuThiem2" to "뉴시티2",
             "theSunAvenueSAV" to "더 선애비뉴",
         )
@@ -85,7 +85,7 @@ class B2Activity : AppCompatActivity() {
 
 
         sapphiraSaigonPearlTowerStopButton.setOnClickListener {
-            busInfo.update("cantavil", "사피라사이공타워에 도착 했습니다")
+            busInfo.update("sapphiraSaigonPearlTower", "사피라사이공타워에 도착 했습니다")
                 .addOnSuccessListener {
                     Log.d(ContentValues.TAG, "성공")
                 }
@@ -94,7 +94,7 @@ class B2Activity : AppCompatActivity() {
                 }
         }
         sapphiraSaigonPearlTowerStopButton.setOnLongClickListener {
-            busInfo.update("cantavil", "사피라사이공타워 지났습니다")
+            busInfo.update("sapphiraSaigonPearlTower", "사피라사이공타워 지났습니다")
                 .addOnSuccessListener {
                     android.widget.Toast.makeText(this, "버튼 성공", android.widget.Toast.LENGTH_SHORT).show()
 
@@ -106,7 +106,7 @@ class B2Activity : AppCompatActivity() {
         }
 
         newcity1StartButton.setOnClickListener {
-            busInfo.update("newCity,ThuThiem1 ", "뉴시티 1에 가고 있습니다")
+            busInfo.update("newCity,ThuThiem1", "뉴시티 1에 가고 있습니다")
                 .addOnSuccessListener {
                     Log.d(ContentValues.TAG, "성공")
                 }

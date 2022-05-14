@@ -121,7 +121,7 @@ class B1Activity : AppCompatActivity() {
 
         parkStartButton.setOnClickListener {
             val bus1Info = db.collection("busInfo").document("b1")
-            bus1Info.update("landmark1", "파크 7에 가고 있습니다")
+            bus1Info.update("park7", "파크 7에 가고 있습니다")
                 .addOnSuccessListener {
                     Log.d(TAG, "성공")
                 }
