@@ -85,7 +85,7 @@ class B2Activity : AppCompatActivity() {
 
 
         sapphiraSaigonPearlTowerStopButton.setOnClickListener {
-            busInfo.update("cantavil", "사피라사이공타워에 도착 했습니다")
+            busInfo.update("sapphiraSaigonPearlTower", "사피라사이공타워에 도착 했습니다")
                 .addOnSuccessListener {
                     Log.d(ContentValues.TAG, "성공")
                 }
@@ -94,7 +94,7 @@ class B2Activity : AppCompatActivity() {
                 }
         }
         sapphiraSaigonPearlTowerStopButton.setOnLongClickListener {
-            busInfo.update("cantavil", "사피라사이공타워 지났습니다")
+            busInfo.update("sapphiraSaigonPearlTower", "사피라사이공타워 지났습니다")
                 .addOnSuccessListener {
                     android.widget.Toast.makeText(this, "버튼 성공", android.widget.Toast.LENGTH_SHORT).show()
 

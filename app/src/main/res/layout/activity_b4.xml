@@ -65,8 +65,6 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
 
-
-
             <TextView
                 android:id="@+id/skyGarden1and2CircleK"
                 android:layout_width="wrap_content"
@@ -377,14 +375,14 @@
                 android:layout_height="wrap_content"
                 app:layout_constraintTop_toBottomOf="@+id/oakwoodResidenceGate1"
                 app:layout_constraintStart_toStartOf="@+id/oakwoodResidenceGate1"
-                app:layout_constraintEnd_toStartOf="@+id/oakwoodStopButton"
+                app:layout_constraintEnd_toStartOf="@+id/oakwoodResidenceGate1StopButton"
                 android:layout_marginTop="10dp"
                 android:layout_marginStart="20dp"
                 android:text="시작"
                 android:textSize="15sp"/>
 
             <Button
-                android:id="@+id/oakwoodStopButton"
+                android:id="@+id/oakwoodResidenceGate1StopButton"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 app:layout_constraintTop_toBottomOf="@+id/oakwoodResidenceGate1"
