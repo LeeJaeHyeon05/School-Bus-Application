@@ -34,7 +34,7 @@ class B2Activity : AppCompatActivity() {
         val busData = hashMapOf(
             "startStop" to "2호차 운행중",
             "sapphiraSaigonPearlTower" to "사파이라사이공",
-            "newCity,ThuThiem1 " to "뉴시티1",
+            "newCity,ThuThiem1" to "뉴시티1",
             "newCity,ThuThiem2" to "뉴시티2",
             "theSunAvenueSAV" to "더 선애비뉴",
         )
@@ -106,7 +106,7 @@ class B2Activity : AppCompatActivity() {
         }
 
         newcity1StartButton.setOnClickListener {
-            busInfo.update("newCity,ThuThiem1 ", "뉴시티 1에 가고 있습니다")
+            busInfo.update("newCity,ThuThiem1", "뉴시티 1에 가고 있습니다")
                 .addOnSuccessListener {
                     Log.d(ContentValues.TAG, "성공")
                 }
