@@ -35,10 +35,6 @@ class TeacherLoginActivity : AppCompatActivity() {
         val timeFormat = SimpleDateFormat("HH시 : mm분")
         binding.studentLoginTimeTextView.text = timeFormat.format(currentTime)
 
-        val test = findViewById<Button>(R.id.bs1)
-        test.setOnClickListener {
-            startActivity(Intent(this, TeacherMainActivity::class.java))
-        }
 
         initLogin()
     }

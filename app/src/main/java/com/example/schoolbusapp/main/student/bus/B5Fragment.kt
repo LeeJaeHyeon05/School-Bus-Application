@@ -49,7 +49,7 @@ class B5Fragment : Fragment() {
                 binding.grandViewC.text = startText1
                 binding.grandViewA.text = startText2
                 binding.myPhuc.text = startText3
-                binding.lLongTNg.text = startText4
+                binding.lyLongTuong.text = startText4
                 binding.myPhatSopanDonpan.text = startText5
                 binding.myDucDominosPizza.text = startText6
                 binding.myKhanhTexas.text = startText7
