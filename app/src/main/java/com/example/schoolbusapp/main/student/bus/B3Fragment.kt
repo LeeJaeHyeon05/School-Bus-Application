@@ -34,7 +34,7 @@ class B3Fragment : Fragment() {
             }
 
             if (snapshot != null && snapshot.exists()) {
-                val startText1 = snapshot.data!!["masteriThaoDien"].toString()
+                val startText1 = snapshot.data!!["masteriThaoDienA4"].toString()
                 val startText2 = snapshot.data!!["theNassimGate"].toString()
                 val startText3 = snapshot.data!!["estella"].toString()
                 val startText4 = snapshot.data!!["imperia"].toString()

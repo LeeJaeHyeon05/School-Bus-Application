@@ -37,7 +37,7 @@ class B5Activity : AppCompatActivity() {
         val stopBtn = findViewById<Button>(R.id.stopBus)
 
         val busData = hashMapOf(
-            "startStop" to "3호차 운행중",
+            "startStop" to "5호차 운행중",
 
             "grandViewC" to "그랜드뷰 C",
             "grandViewA" to "그랜드뷰 A",

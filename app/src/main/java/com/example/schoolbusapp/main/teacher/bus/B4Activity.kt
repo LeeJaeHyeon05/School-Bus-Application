@@ -40,15 +40,15 @@ class B4Activity : AppCompatActivity() {
         val stopBtn = findViewById<Button>(R.id.stopBus)
 
         val busData = hashMapOf(
-            "startStop" to "3호차 운행중",
+            "startStop" to "4호차 운행중",
             "skyGarden1and2CircleK" to "스카이가든 1,2 서클케이",
             "riverParkBlockAWooriBank" to "리버파크 우리 뱅크",
             "riverParkVBIBank" to "리버파크 VBI은행",
             "meetworkMỹKhánh" to "미칸",
             "gardenPlaza1BlockA" to "가든플라자 A",
             "gardenPlaza1BlockD" to "가든플라자 D",
-            "panoramaBlockA" to "임페리아",
-            "panoramaBlockJ" to "렉싱턴",
+            "panoramaBlockA" to "파노라마 A",
+            "panoramaBlockJ" to "파노라마 J",
             "oakwoodResidenceGate" to "왁우드레지덴스"
         )
 

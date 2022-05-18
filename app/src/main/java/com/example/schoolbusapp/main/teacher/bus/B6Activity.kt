@@ -32,7 +32,7 @@ class B6Activity : AppCompatActivity() {
             "startStop" to "6호차 운행중",
 
             "skyGarden3CircleK" to "스카이가든3",
-            "scenicValley2ParisBaguette " to "시닉밸리2",
+            "scenicValley2ParisBaguette" to "시닉밸리2",
             "scenicValley1" to "시닉밸리1",
             "greenValley" to "그린밸리",
         )

@@ -36,7 +36,7 @@ class B3Activity : AppCompatActivity() {
         val busData = hashMapOf(
             "startStop" to "3호차 운행중",
             "masteriThaoDienA4" to "마스테리다오디엔",
-            "theNassimGate " to "더 나심",
+            "theNassimGate" to "더 나심",
             "estella" to "에스텔라",
             "imperia" to "임페리아",
             "lexington" to "렉싱턴",
