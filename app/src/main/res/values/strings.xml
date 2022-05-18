@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">school bus app</string>
+    <string name="app_name">KGS 스쿨버스</string>
     <string name="creditText">MADE BY JAE HAYEON</string>
     <string name="studentText">학생</string>
     <string name="teacherText">선생님</string>
