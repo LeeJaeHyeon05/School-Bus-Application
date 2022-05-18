@@ -116,7 +116,7 @@ class B5Activity : AppCompatActivity() {
         }
 
         grandViewAStartButton.setOnClickListener {
-            busInfo.update("grandViewA ", "그랜드뷰 A 가고 있습니다")
+            busInfo.update("grandViewA", "그랜드뷰 A 가고 있습니다")
                 .addOnSuccessListener {
                     Log.d(ContentValues.TAG, "성공")
                 }

@@ -104,7 +104,7 @@ class B6Activity : AppCompatActivity() {
         }
 
         scenicValley2ParisBaguetteStartButton.setOnClickListener {
-            busInfo.update("scenicValley2ParisBaguette ", "시닉밸리2 가고 있습니다")
+            busInfo.update("scenicValley2ParisBaguette", "시닉밸리2 가고 있습니다")
                 .addOnSuccessListener {
                     Log.d(ContentValues.TAG, "성공")
                 }

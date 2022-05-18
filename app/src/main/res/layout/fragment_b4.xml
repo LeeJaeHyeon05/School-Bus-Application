@@ -41,7 +41,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         android:text="도착 (7:15) Park 7 2HS"
         android:textSize="23sp"
-        android:layout_marginTop="30dp"
+        android:layout_marginTop="20dp"
         android:textColor="@color/gray"/>
 
     <TextView
@@ -53,7 +53,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         android:text="아직 (7:17) Landmark 1 1HS"
         android:textSize="23sp"
-        android:layout_marginTop="35dp"
+        android:layout_marginTop="20dp"
         android:textColor="@color/gray"/>
 
 
@@ -67,7 +67,7 @@
         android:text="아직 (7:19) Landmark Plus,GS25 2HS)"
         android:gravity="center_horizontal"
         android:textSize="25sp"
-        android:layout_marginTop="35dp"
+        android:layout_marginTop="20dp"
         android:textColor="@color/gray"/>
 
     <TextView
@@ -79,7 +79,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         android:text="아직 (7:22) Landmark 5, L81, 1HS"
         android:textSize="23sp"
-        android:layout_marginTop="35dp"
+        android:layout_marginTop="20dp"
         android:textColor="@color/gray"/>
     <TextView
         android:id="@+id/gardenPlaza1BlockD"
@@ -90,7 +90,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         android:text="아직 (7:22) Landmark 5, L81, 1HS"
         android:textSize="23sp"
-        android:layout_marginTop="35dp"
+        android:layout_marginTop="20dp"
         android:textColor="@color/gray"/>
     <TextView
         android:id="@+id/panoramaBlockA"
@@ -101,7 +101,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         android:text="아직 (7:22) Landmark 5, L81, 1HS"
         android:textSize="23sp"
-        android:layout_marginTop="35dp"
+        android:layout_marginTop="20dp"
         android:textColor="@color/gray"/>
     <TextView
         android:id="@+id/panoramaBlockJ"
@@ -112,7 +112,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         android:text="아직 (7:22) Landmark 5, L81, 1HS"
         android:textSize="23sp"
-        android:layout_marginTop="35dp"
+        android:layout_marginTop="20dp"
         android:textColor="@color/gray"/>
     <TextView
         android:id="@+id/oakwoodResidenceGate1"
@@ -123,7 +123,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         android:text="아직 (7:22) Landmark 5, L81, 1HS"
         android:textSize="23sp"
-        android:layout_marginTop="35dp"
+        android:layout_marginTop="20dp"
         android:textColor="@color/gray"/>
 
 

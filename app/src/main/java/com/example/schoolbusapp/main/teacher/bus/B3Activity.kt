@@ -109,7 +109,7 @@ class B3Activity : AppCompatActivity() {
         }
 
         theNassimGateStartButton.setOnClickListener {
-            busInfo.update("theNassimGate ", "더 나심에 가고 있습니다")
+            busInfo.update("theNassimGate", "더 나심에 가고 있습니다")
                 .addOnSuccessListener {
                     Log.d(ContentValues.TAG, "성공")
                 }

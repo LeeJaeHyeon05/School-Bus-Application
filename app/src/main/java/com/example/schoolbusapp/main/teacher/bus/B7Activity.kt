@@ -104,7 +104,7 @@ class B7Activity : AppCompatActivity() {
         }
 
         namPhucBaeMartStartButton.setOnClickListener {
-            busInfo.update("namPhúcBaeMart ", "남푹(배마트) 가고 있습니다")
+            busInfo.update("namPhúcBaeMart", "남푹(배마트) 가고 있습니다")
                 .addOnSuccessListener {
                     Log.d(ContentValues.TAG, "성공")
                 }

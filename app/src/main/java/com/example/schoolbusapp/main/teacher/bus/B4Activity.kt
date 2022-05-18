@@ -119,7 +119,7 @@ class B4Activity : AppCompatActivity() {
         }
 
         riverParkBlockAStartButton.setOnClickListener {
-                busInfo.update("riverParkBlockAWooriBank ", "리버파크(우리은행) 가고 있습니다")
+                busInfo.update("riverParkBlockAWooriBank", "리버파크(우리은행) 가고 있습니다")
                     .addOnSuccessListener {
                     Log.d(ContentValues.TAG, "성공")
                 }
